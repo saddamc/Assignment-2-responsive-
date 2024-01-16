@@ -141,6 +141,63 @@ body {
     text-align: center;
     cursor: pointer;
 }
+/* new style for new section */
+.tour-container {
+    border: 2px solid red;
+    margin: 50px auto;
+    max-width: 1200px;
+    object-fit: cover;
+}
+
+
+
+.tour-flex-1, .tour-flex-2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+
+.tour-item img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.tour-details h1 {
+    color: #333333;
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: transparent;
+    margin: 25px;
+
+}
+
+.tour-details h2 {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    margin: 15px;
+
+}
+
+.tour-item button{
+    color: #FFF;
+    border-radius: 8px;
+    background: #006A4E;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 20px auto;
+    text-align: center;
+    justify-content: center;
+    padding: 12px 19px;
+    width: 200px;
+    height: 52px;
+}
+
+
 
 /* history popular tour */
 .history-container {
@@ -384,6 +441,7 @@ P {
 
 
 
+
 @media screen and (max-width: 600px) {
     .nav-section {
         flex-direction: column;
@@ -493,21 +551,26 @@ P {
         grid-column: 1 / span 1;
         grid-row: 7 / span 1;
     }
+
     .service-why {
         padding: 15px;
     }
+
     .service-us {
         grid-template-columns: 1fr;
         margin: 0 auto;
     }
+
     .service-hotel-1 {
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
     }
+
     .service-hotel-2 {
         grid-column: 1 / span 1;
         grid-row: 2 / span 1;
     }
+
     .service-hotel-3 {
         grid-column: 1 / span 1;
         grid-row: 3 / span 1;
