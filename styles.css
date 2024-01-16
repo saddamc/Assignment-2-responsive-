@@ -96,12 +96,17 @@ body {
     color: #FFF;
     font-size: 16px;
     font-weight: 400;
+    max-width: 700px;
+    margin-left: 250px;
 }
 
 .header-container-btn {
     padding: 16px;
-    gap: 24px;
     border-radius: 8px;
+    margin: 0 185px 106px;
+    background: rgba(255, 255, 255, 0.30);
+    
+
 }
 
 .text {
@@ -111,6 +116,9 @@ body {
     background: #FFF;
     font-size: 16px;
     color: rgba(19, 19, 24, 0.50);
+    transform: scale(0.9);
+    
+
 }
 
 .btn-find img {
@@ -130,6 +138,54 @@ body {
     font-weight: 700;
     justify-content: center;
     text-align: center;
+    cursor: pointer;
+}
+
+/* history popular tour */
+.history-container {
+    max-width: 1200px;
+    min-height: 500px;
+    background-color: #FFF;
+    margin: 100px auto;
+    justify-content: center;
+}
+.history{
+    display: flex;
+    justify-content: space-between;
+}
+.history-tour{
+    width: 45%;
+}
+.history-tour-title{
+    color: #131318;
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.history-tour p, li{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.history-tour li{
+    margin: 20px 30px;
+}
+.history-tour button{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: #FF5400;
+    padding: 20px;
+    width: 174px;
+    cursor: pointer;
+}
+
+.history-image{
+    width: 45%;
+}
+.history-image img{
+    width: 100%;
 }
 
 
@@ -143,30 +199,60 @@ body {
 
 
 
+
+
+
 @media screen and (max-width: 600px) {
-    .nav-section{
+    .nav-section {
         flex-direction: column;
         margin: 20px 20px;
+        height: fit-content;
     }
-    .nav-container{
+
+    .nav-container {
         flex-direction: column;
+        flex-wrap: wrap;
         width: 100%;
         width: 250px;
         height: 45px;
-                   
     }
-    .nav-container p{
-        border: 2px solid rebeccapurple;
-        font-size: 20px;
-       
+
+    .nav-container p {
+        font-size: 20px;       
     }
-    .items-container a{
+
+    .items-container a {
         display: none;
 
     }
+
     .nav-container img {
-        border: 2px solid rebeccapurple;
-        width: 25px;
+        width: 25px; 
     }
-    
+    .header-container{
+        margin: 10px;
+    }
+    .header-container-box h1{
+        margin-top: 0;
+        font-size: 40px;
+    }
+    .header-container-box p{
+        margin: 0 50px;
+    }
+    .header-container-btn{
+        margin: 10px 80px;
+    }
+    .history{
+        flex-direction: column;
+    }
+    .history-container{
+        margin: 10px;
+    }
+    .history-tour{
+        width: 100%;
+        margin: 20px;
+    }
+    .history-image{
+        width: 100%;
+        margin: 10px;
 }
