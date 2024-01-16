@@ -119,7 +119,6 @@ body {
     color: rgba(19, 19, 24, 0.50);
     transform: scale(0.9);
 
-
 }
 
 .btn-find img {
@@ -141,27 +140,31 @@ body {
     text-align: center;
     cursor: pointer;
 }
+
 /* new style for new section */
 .tour-container {
-    border: 2px solid red;
     margin: 50px auto;
     max-width: 1200px;
     object-fit: cover;
 }
 
-
-
-.tour-flex-1, .tour-flex-2 {
+.tour-flex-1,
+.tour-flex-2 {
     display: flex;
     text-align: center;
     justify-content: center;
-    
+}
+
+.tour-box-3,
+.tour-box-4 img {
+    width: 100%;
 }
 
 
 .tour-item img {
     width: 100%;
     object-fit: cover;
+    border-radius: 16px;
 }
 
 .tour-details h1 {
@@ -183,7 +186,7 @@ body {
 
 }
 
-.tour-item button{
+.tour-item button {
     color: #FFF;
     border-radius: 8px;
     background: #006A4E;
@@ -428,10 +431,136 @@ P {
     margin: 20px;
 }
 
+.newsletter {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+}
 
+.newsletter-container {
+    display: flex;
+    justify-content: space-between;
+}
 
+.newsletter-subscribe {
+    width: 42%;
+    border: 2px solid #FF5400;
+    border-radius: 16px;
+    width: 450px;
+    height: 422px;
+}
 
+.newsletter-subscribe h1 {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 30px;
+}
 
+.newsletter-subscribe p {
+    color: #5A5A5A;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 20px;
+    text-align: left;
+}
+
+.newsletter-form {
+    width: 400px;
+    height: 52px;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 10px 20px;
+}
+
+.newsletter-subscribe input[type=text] {
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(19, 19, 24, 0.05);
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 15px 10px 15px 30px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.newsletter-subscribe button {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+    width: 350px;
+    height: 60px;
+    border-radius: 12px;
+    background: #FF5400;
+    margin: 20px;
+
+}
+.newsletter-discount {
+    width: 54%;
+    max-width: 674px;
+    max-height: 422px;
+}
+.newsletter-discount button {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+    width: 300px;
+    height: 120px;
+    border-radius: 16px;
+    background: #FF5400;
+    margin: 20px;
+    transform: rotate(-220deg);
+    transform-origin: 100% 0;
+    border: none;
+    cursor: pointer;   
+}
+    footer {
+       
+    }
+    .footer-section {
+    background-color: #ff550010;
+    border: 1px solid rgba(255, 255, 0, 0);
+    margin: 50px auto 0 auto;
+    padding: 50px auto;
+
+}
+.footer-description {
+    color: #5A5A5A;
+    font-weight: 400;
+}
+.footer-title {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+}
+.footer-title img {
+    margin: 15px;
+}
+.social-icon img {
+    width: 24px;
+}
+.social-icon {
+    justify-content: center;
+    margin: 30px auto;
+    display: flex;
+    gap: 30px;
+}
+    hr {
+    background: rgba(19, 19, 24, 0.10);
+    max-width: 872px;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto;
+    
+}
+.footer-rights p{
+    font-size: 16px;
+    font-weight: 300;
+}
+.footer-rights {
+    margin-bottom: 100px;
+}
 
 
 
@@ -574,6 +703,21 @@ P {
     .service-hotel-3 {
         grid-column: 1 / span 1;
         grid-row: 3 / span 1;
+    }
+    .newsletter-container {
+        flex-direction: column;
+    }
+    .newsletter-discount img {
+        width: 190%;
+    }
+    .newsletter-discount button {
+        transform: rotate(45deg) ;
+    }
+    .newsletter-subscribe{
+        margin: auto;
+    }
+    .footer-title p{
+        font-size: 24px;
     }
 
 }
